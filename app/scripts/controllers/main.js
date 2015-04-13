@@ -22,7 +22,7 @@ angular.module('yeomanangularApp')
           $scope.markers[x] = {
                 lat: $scope.listings[x].lat,
                 lng: $scope.listings[x].lon,
-                message: "Well, hey there, folks!",
+                message: $scope.listings[x].title,
                 focus: true,
                 draggable: true
           };
